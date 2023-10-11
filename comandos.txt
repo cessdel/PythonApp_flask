@@ -1,0 +1,4 @@
+docker build -t cessdel/python_api_flask:1.0 .
+docker run -it -p 4000:3000 cessdel/python_api_flask:1.0
+
+cessdel/pythonAPI_flask:1.0

@@ -43,6 +43,10 @@ def update_sabor(id):
         return jsonify({'message': 'Sabor de helado actualizado exitosamente'})
     else:
         return jsonify({'message': 'Sabor de helado no encontrado'}), 404
+    
+@app.route('/', methods=['GET'])
+def index():
+    return "¡Hola, esta es la página de inicio de la aplicación!"
 
 # Ruta para eliminar un sabor de helado por su ID
 @app.route('/delete/<int:id>', methods=['DELETE'])
